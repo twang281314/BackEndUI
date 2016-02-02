@@ -71,6 +71,7 @@ define(function(require, exports, module) {
 				if (href && reg.test(href)) { //判断是否合法 
 					var index = layer.load(null, 0); //打开loading
 					$(".main_content").hide();
+                    console.log(href);
 					$(".main_content").load(href, function(response, status, xhr) { //ajax页面加载
 						layer.close(index); //关闭loading
 						setting.setting();
