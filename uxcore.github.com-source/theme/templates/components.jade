@@ -1,0 +1,12 @@
+extends layout
+include aside
+include meta
+include markdown
+include demos
+
+block content
+	+aside('components')
+	article.site-content
+		+meta(post)
+		+demos()
+		+markdown(post)
