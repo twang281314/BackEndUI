@@ -74,7 +74,7 @@ module.exports = function(config) {
       ],
       module: {
         loaders: [
-          { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader?stage=0" },
+          { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader?stage=1" },
           { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') }
         ],
         postLoaders: [{
