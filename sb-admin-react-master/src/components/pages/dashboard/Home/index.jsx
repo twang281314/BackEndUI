@@ -7,6 +7,7 @@ var PreHome = React.createClass({
 
   bundle: require('bundle?lazy!./Home.jsx'),
 
+
   preRender: function () {
   	return <div></div>;
   }
