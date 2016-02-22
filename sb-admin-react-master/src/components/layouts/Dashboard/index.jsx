@@ -282,7 +282,8 @@ var HomePage = React.createClass({
           </Navbar>
 
           <div id="page-wrapper" className="page-wrapper" ref="pageWrapper" style={{minHeight: this.state.Height}}>
-            <RouteHandler {...this.props} />
+            //<RouteHandler {...this.props} />
+            {this.props.children}
           </div>
 
         </div>

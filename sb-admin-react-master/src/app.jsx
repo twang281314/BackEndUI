@@ -8,8 +8,9 @@ import "babel-core/polyfill";
 
 // Libraries
 import React from "react";
-import Router from "react-router";
+import {Router,browserHistory} from "react-router";
 
+import { render } from 'react-dom'
 
 // Base styling
 import "./common/styles/app.less";
@@ -73,6 +74,11 @@ let fetchData = function(routes, params) {
 }*/
 
 // Start the router
+/*
 Router.run(routes, function(Handler) {
   React.render(<Handler />, document.getElementById(DOM_APP_EL_ID));
 });
+*/
+render(
+    <Router history={browserHistory}>{routes}</Router>,document.getElementById(DOM_APP_EL_ID)
+);
