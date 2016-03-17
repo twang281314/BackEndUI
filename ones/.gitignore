@@ -1,0 +1,15 @@
+node_modules
+dist
+.tmp
+.sass-cache
+.idea
+bower_components
+ones/bower_components
+server/Runtime
+server/*.log
+server/vendor
+server/uploads
+server/Data/install.lock
+
+ones/apps/operationLog
+server/Application/OperationLog
